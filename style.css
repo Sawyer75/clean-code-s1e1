@@ -145,13 +145,23 @@ li > input[type="text"] {
   width: 226px;
 }
 
-button .todo-app__delete img {
+button.todo-app__delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-button .todo-app__delete img:hover {
+button.delete img {
+  height: 2em;
+  transform: rotateZ(45deg);
+  transition: transform 200ms ease-in;
+}
+
+button.todo-app__delete img:hover {
+  transform: rotateZ(0);
+}
+
+button.delete img:hover {
   transform: rotateZ(0);
 }
 
@@ -168,11 +178,11 @@ ul li input[type="text"] {
   display:none;
 }
 
-ul li .todo-app__edit-mode input[type="text"] {
+ul li.todo-app__edit-mode input[type="text"] {
   display:inline-block;
   width:224px;
 }
 
-ul li .todo-app__edit-mode label {
+ul li.todo-app__edit-mode label {
   display:none;
 }
